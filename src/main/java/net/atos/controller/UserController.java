@@ -52,4 +52,9 @@ public class UserController {
         List<User> listUser = userService.findAllUsers();
         return new ResponseEntity<>(listUser, HttpStatus.OK);
     }
+    
+    @RequestMapping("/login")
+    public String login(User user) {
+        return "user/login";
+    }
 }
