@@ -19,7 +19,7 @@ public class AuthenticationController {
         return "index";
     }
 
-    @RequestMapping("")
+    @RequestMapping("signin")
     public String SignIn() {
         return "sign_in";
     }
